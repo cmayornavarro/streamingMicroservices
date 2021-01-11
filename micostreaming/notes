@@ -16,3 +16,6 @@ server.port 9090 in application.properties
 see :
 https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html
 for more properties
+
+
+pacakges arborescences is very important
