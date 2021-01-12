@@ -1,9 +1,12 @@
 package com.streaming.micostreaming.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.streaming.micostreaming.model.Film;
 
 /*
  * il indique que cette classe va pouvoir traiter les requêtes que nous allons définir.
@@ -24,7 +27,8 @@ public class FilmController {
 	    
 	    @GetMapping(value = "/Produits/{id}")
 	    public String afficherUnProduit(@PathVariable int id) {
-	        return "Vous avez demandé un produit avec l'id  " + id;
+	    	Film film = new Film(id, new String("My First Film"),100);
+	        return film.toString();
 	    }
 	
 }
