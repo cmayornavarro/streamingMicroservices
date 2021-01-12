@@ -25,7 +25,7 @@ public class FilmController {
 	        return "This is my film";
 	    }
 	    
-	    @GetMapping(value = "/Produits/{id}")
+	    @GetMapping(value = "/Films/{id}")
 	    public String afficherUnProduit(@PathVariable int id) {
 	    	Film film = new Film(id, new String("My First Film"),100);
 	        return film.toString();
