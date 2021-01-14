@@ -30,5 +30,10 @@ public class FilmController {
 	    	Film film = new Film(id, new String("My First Film"),100);
 	        return film.toString();
 	    }
+	    /*
+	     * Vous avez indiqué au début que cette classe est un contrôleur REST grâce 
+	     * à l'annotation @RestController. Spring sait alors que les réponses aux 
+	     * requêtes qu'il vous passe devront être très probablement en format JSON.
+	     * */
 	
 }
