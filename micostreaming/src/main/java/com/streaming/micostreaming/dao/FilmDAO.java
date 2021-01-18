@@ -8,8 +8,8 @@ import com.streaming.micostreaming.model.Film;
 //https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods
 public interface FilmDAO {
     public List<Film>findAll();
-    public void FilmfindById(int id);
-    public void Filmsave(Film film);
+    public  Film findById(int id);
+    public  Film save(Film film);
     
     
     
