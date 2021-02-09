@@ -4,6 +4,7 @@ import org.springframework.data.annotation.Id;
 
 public class CustomerMongo {
 
+    // @Id marks a field in a model class as the primary key:
     @Id
     public String id;
 

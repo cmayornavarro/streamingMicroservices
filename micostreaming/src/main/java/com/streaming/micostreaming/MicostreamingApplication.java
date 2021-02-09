@@ -9,7 +9,8 @@ import com.streaming.micostreaming.dao.CustomerDAO;
 import com.streaming.micostreaming.model.CustomerMongo;
 
 /*
-  implements CommandLineRunner, the run method is automatically invoked when Spring Boot starts.
+  implements CommandLineRunner, the run method is automatically invoked when Spring Boot starts. *  
+ *  CommandLineRunner can be used to run code at application startup, provided it should be contained within SpringApplication
  * */
 @SpringBootApplication
 public class MicostreamingApplication implements CommandLineRunner {

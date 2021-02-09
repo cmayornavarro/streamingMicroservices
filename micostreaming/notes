@@ -19,3 +19,11 @@ for more properties
 
 
 pacakges arborescences is very important
+
+
+https://spring.io/guides/gs/accessing-data-mongodb/
+
+mongo
+/d/nodeJSWorkSpace/mongodb-win32-x86_64-2012plus-4.2.8
+ bin/mongo.exe
+ use mongoSpring
