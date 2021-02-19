@@ -31,6 +31,8 @@ public class MicostreamingApplication implements CommandLineRunner {
         // save a couple of customers
         repository.save(new CustomerMongo("Alice", "Smith"));
         repository.save(new CustomerMongo("Bob", "Smith"));
+        repository.save(new CustomerMongo("Christian", "Mayor"));
+        repository.save(new CustomerMongo("David", "Navarro"));
 
         // fetch all customers
         System.out.println("Customers found with findAll():");
@@ -48,6 +50,12 @@ public class MicostreamingApplication implements CommandLineRunner {
         System.out.println("Customers found with findByLastName('Smith'):");
         System.out.println("--------------------------------");
         for (CustomerMongo customer : repository.findByLastName("Smith")) {
+            System.out.println(customer);
+        }
+
+        System.out.println("Customers found with findByLastName('Mayor'):");
+        System.out.println("--------------------------------");
+        for (CustomerMongo customer : repository.findByLastName("Mayor")) {
             System.out.println(customer);
         }
 
